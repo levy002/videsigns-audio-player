@@ -57,7 +57,7 @@ Welcome to the **Custom Audio Player** — a feature-rich, intuitive platform de
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://videsigns-audio-player.vercel.app/)
 
 <!-- GETTING STARTED -->
 
