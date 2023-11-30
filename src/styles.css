@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #f1f3f4;
+  --secondary-color: #000;
+  --tertiary-color: #e5e7e8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+#main-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#controls-container {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  width: 50%;
+  margin: 2rem auto 0;
+  border-radius: 6rem;
+  border: 1px solid #e3e5e6;
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  outline: none;
+  padding: 8px;
+  transition: background-color 0.3s, border-radius 0.3s;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+}
+
+#unmute-button {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.controls div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.audio-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#progress-bar {
+  width: 85%;
+  cursor: pointer;
+  height: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+#progress-bar::-webkit-slider-runnable-track {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#volume-control {
+  cursor: pointer;
+}
+
+.functionalities-container {
+  width: 70%;
+  margin: 1.5rem auto;
+  background-color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+#functionalities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.functionality {
+  margin-bottom: 20px;
+  list-style-type: none;
+  text-align: center;
+  
+}
+
+.functionality h3 {
+  font-size: 0.8rem;
+  margin: 0.5rem 0.5rem;
+}
+
+.functionality p {
+  font-size: 0.7rem;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.functionalities-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
